@@ -4,35 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Welcome to Website</title>
+    <link rel="stylesheet" href="index.css">
     <style>
-        table,th,td
-        {
-            border: 1px solid black;
-        }
+    .content {
+        flex-direction: column;
+        display: flex;
+    }
+    .content > div {
+        display: flex;
+        flex: 1; 
+        align-content: center;
+        justify-content: center;
+    }
+    .table_person{
+        border: 5px solid black;
+    }
+    footer > p{
+        text-align: end;
+    }
     </style>
+
 </head>
 <body>
-    <h1>Hello World</h1>
-    <a href="/form.html">click here</a>
-    <ol type="A">
-        <li>m</li>
-        <li>n</li>
-        <li>o</li>
-    </ol>
-    <h2>Contoh Tabel</h2>
-    <table>
-        <tr>
-            <th>Nama</th>
-            <th>Lokasi</th>
-            <th>Email</th>
-        </tr>
-        <tr>
-            <td>vbca</td>
-            <td>Sby</td>
-            <td>mhjawd@gmail.com</td>
-        </tr>
-    </table>
-<img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg" alt="kucing" width="200" height="200">
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar" style="flex-direction: row;">
+                <img 
+                    src="assets/LogoLH.png"
+                    alt="logo"
+                    class="logo"
+                />
+                <div class="home">Home</div>
+                <div class="profile">Our Profile</div>
+                <div class="portfolio">Portfolio</div>
+                <div class="messageus">Message Us</div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="content">
+        <!-- hero -->
+        <section id="hero">
+            <div class="container">
+                <div class="hero">
+                    <h1 class="hero-title">Hi, Welcome to The Homepage</h1>
+                    <p class="hero-subtitle">Ini adalah website latihan pertama.</p>
+                    <img class="hero-img" src="assets/Artboard 1.png" alt="hero image">
+                </div>
+            </div>
+            <hr class="hero-hr">
+        </section>
+
+        <section id="headquarter">
+            <div class="container">
+               <div class="head">
+                <h1 class="headquarter-title">Our Headquarters</h1>
+                <div class="headquarter-gallery">
+                    <div class="city">
+                        <img class="gallery-img" src="assets/Placeholder1.png" alt="Placeholder1">
+                        <h3>Jakarta</h3>
+                    </div>
+                    <div class="city">
+                        <img class="gallery-img" src="assets/Placeholder1.png" alt="Placeholder1">
+                        <h3>Bandung</h3>
+                    </div>
+                    <div class="city">
+                        <img class="gallery-img" src="assets/Placeholder1.png" alt="Placeholder1">
+                        <h3>Surabaya</h3>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </section>
+    </main>
+    <div>
+        <h2>Ini adalah Form.</h2>
+    </div>
+    <div>
+        <h2>Ini adalah Table.</h2>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <p>RevoU. ©2023</p>
+            </div>
+        </div>
+    </footer>
+<!-- <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg" alt="kucing" width="200" height="200"> -->
 </body>
 </html>
